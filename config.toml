@@ -2,3 +2,6 @@ baseURL = "http://example.org/"
 languageCode = "en-US"
 title = "My New Hugo Site"
 theme = "basic"
+
+[params]
+  author = "Zoltan Kiraly"
