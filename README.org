@@ -18,4 +18,6 @@ $ npm install
 
 *** Cloud installation
 
-Point your CDN to your GitHub repository and deploy the website in the cloud.
+- Upload your website to GitHub (make the repository private if needed).
+- Point your CDN to your GitHub repository.
+- Deploy the website in the cloud.
