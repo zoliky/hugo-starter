@@ -7,9 +7,15 @@ This project is work in progress.
 
 ** Installation
 
+*** Local installation for development purposes.
+
 #+begin_src shell
 $ cd ~
 $ git clone https://github.com/zoliky/hugo-starter.git
 $ cd hugo-starter
 $ npm install
 #+end_src
+
+*** Installation in the cloud
+
+Point the cloud server provider to your GitHub repository and deploy the website.
