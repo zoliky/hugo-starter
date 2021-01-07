@@ -1,7 +1,13 @@
-baseURL = "http://example.org/"
+# ----------------------------------------------------------------------------
+#           FILE: config.toml
+#    DESCRIPTION: Hugo configuration file
+#         AUTHOR: Zoltán Király <zoliky@gmail.com>
+# ----------------------------------------------------------------------------
+
+title        = "My New Hugo Site"
+baseURL      = "http://example.org/"
 languageCode = "en-US"
-title = "My New Hugo Site"
-theme = "basic"
+theme        = "basic"
 
 [params]
   author = "Zoltan Kiraly"
