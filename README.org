@@ -18,4 +18,4 @@ $ npm install
 
 *** Installation in the cloud
 
-Point the cloud server provider to your GitHub repository and deploy the website.
+Point your cloud provider to your GitHub repository and deploy the website.
