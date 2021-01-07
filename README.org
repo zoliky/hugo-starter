@@ -4,3 +4,14 @@
 #+DATE: <2021-01-06 Wed>
 
 This project is work in progress.
+
+** Installation
+
+Install Babel.
+
+#+begin_src shell
+$ cd ~
+$ git clone https://github.com/zoliky/hugo-starter.git
+$ cd hugo-starter
+$ npm install
+#+end_src
