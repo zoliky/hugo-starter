@@ -16,6 +16,6 @@ $ cd hugo-starter
 $ npm install
 #+end_src
 
-*** Cloud installation
+*** Cloud installation / Serverless
 
 Point your CDN to your GitHub repository and deploy the website in the cloud.
