@@ -7,7 +7,7 @@ This project is work in progress.
 
 ** Installation
 
-*** Local installation for development purposes
+*** Local installation
 
 #+begin_src shell
 $ cd ~
@@ -16,6 +16,6 @@ $ cd hugo-starter
 $ npm install
 #+end_src
 
-*** Installation in the cloud
+*** Cloud installation
 
 Point your CDN to your GitHub repository and deploy the website in the cloud.
