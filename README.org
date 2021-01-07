@@ -18,7 +18,7 @@ $ npm install
 
 *** Cloud installation
 
-This is a modern way of installing which requires no more web servers (aka. serverless architecture). This is practically the future of web.
+This is a modern way of installing which requires no more servers / web servers (aka. serverless architecture). This is practically the future of web.
 
 - Upload your website to GitHub (make the repository private if needed).
 - Point your CDN to your GitHub repository.
