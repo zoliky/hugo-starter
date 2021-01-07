@@ -3,5 +3,8 @@
   {{ hugo.Generator }}
   <meta name="author" content="{{ .Site.Params.author }}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {{ $options := (dict "outputStyle" "compressed" "enableSourceMap" true) }}
+  {{ $style := resources.Get "sass/main.scss" | resources.ToCSS $options }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}">
   <title>{{ .Site.Title }}</title>
 </head>
