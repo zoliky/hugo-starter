@@ -10,4 +10,5 @@ languageCode = "en-US"
 theme        = "basic"
 
 [params]
-  author = "Zoltan Kiraly"
+  author      = "Zoltan Kiraly"
+  description = "My New Hugo Site"
