@@ -7,5 +7,11 @@
   {{ $options := (dict "outputStyle" "compressed" "enableSourceMap" true) }}
   {{ $style := resources.Get "sass/main.scss" | resources.ToCSS $options }}
   <link rel="stylesheet" href="{{ $style.Permalink }}">
+  {{ range .AlternativeOutputFormats }}
+    {{ $link := `<link rel="%s" type="%s" href="%s" title="%s">` }}
+    {{ $title := printf "%s - %s" $.Page.Title $.Site.Title }}
+    {{ if $.Page.IsHome }}{{ $title = $.Site.Title }}{{ end }}
+    {{ printf $link .Rel .MediaType .Permalink $title | safeHTML }}
+  {{ end }}
   <title>{{ if .Page.IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
 </head>
