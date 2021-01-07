@@ -7,7 +7,7 @@ This project is work in progress.
 
 ** Installation
 
-*** Local installation for development purposes.
+*** Local installation for development purposes
 
 #+begin_src shell
 $ cd ~
