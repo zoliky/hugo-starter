@@ -7,20 +7,9 @@ This project is work in progress.
 
 ** Installation
 
-*** Local installation
-
 #+begin_src shell
 $ cd ~
 $ git clone https://github.com/zoliky/hugo-starter.git
 $ cd hugo-starter
 $ npm install
 #+end_src
-
-*** Cloud installation
-
-This is a modern way of installing which requires no more servers / web servers.
-It is also know as "serverless architecture" and it is basically the future of the web. Learn more at https://jamstack.org
-
-- Upload your website to GitHub (make the repository private if needed).
-- Point your CDN to your GitHub repository.
-- Deploy the website in the cloud.
