@@ -7,8 +7,6 @@ This project is work in progress.
 
 ** Installation
 
-Install Babel.
-
 #+begin_src shell
 $ cd ~
 $ git clone https://github.com/zoliky/hugo-starter.git
