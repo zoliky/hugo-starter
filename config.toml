@@ -8,7 +8,7 @@ title        = "My New Hugo Site"
 baseURL      = "http://example.org/"
 languageCode = "en-US"
 theme        = "basic"
-paginate     = 10
+paginate     = 1
 
 [params]
   author      = "Zoltan Kiraly"
