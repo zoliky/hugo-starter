@@ -5,6 +5,8 @@
 
 This project is work in progress.
 
+[[./screenshot.png]]
+
 Highlights:
 
 - [DONE] Sass
