@@ -14,13 +14,13 @@ theme        = "basic"
   description = "My New Hugo Site"
   images      = ["site-feature-image.jpg"]
 
-[permalinks]
-  posts = "posts/:year/:month/:slug"
-  year  = "/posts/:slug/"
-  month = "/posts/:slug/"
+#[permalinks]
+#  posts = "posts/:year/:month/:slug"
+#  year  = "/posts/:slug/"
+#  month = "/posts/:slug/"
 
-[taxonomies]
-  year     = "year"
-  month    = "month"
-  tag      = "tags"
-  category = "categories"
+#[taxonomies]
+#  year     = "year"
+#  month    = "month"
+#  tag      = "tags"
+#  category = "categories"
