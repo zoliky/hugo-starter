@@ -13,3 +13,6 @@ theme        = "basic"
   author      = "Zoltan Kiraly"
   description = "My New Hugo Site"
   images      = ["site-feature-image.jpg"]
+
+[permalinks]
+  posts = "posts/:year/:month/:slug"
