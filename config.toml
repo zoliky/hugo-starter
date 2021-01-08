@@ -8,19 +8,33 @@ title        = "My New Hugo Site"
 baseURL      = "http://example.org/"
 languageCode = "en-US"
 theme        = "basic"
+paginate     = 10
 
 [params]
   author      = "Zoltan Kiraly"
   description = "My New Hugo Site"
   images      = ["site-feature-image.jpg"]
 
-#[permalinks]
-#  posts = "posts/:year/:month/:slug"
-#  year  = "/posts/:slug/"
-#  month = "/posts/:slug/"
+[permalinks]
+  posts = "posts/:year/:month/:slug"
+  year  = "/posts/:slug/"
+  month = "/posts/:slug/"
 
-#[taxonomies]
-#  year     = "year"
-#  month    = "month"
-#  tag      = "tags"
-#  category = "categories"
+[taxonomies]
+  year     = "year"
+  month    = "month"
+  tag      = "tags"
+  category = "categories"
+
+[related]
+  threshold    = 80.0
+  includeNewer = false
+  toLower      = false
+
+  [[related.indices]]
+    name   = "keywords"
+    weight = 100.0
+  
+  [[related.indices]]
+    name   = "date"
+    weight = 10.0
