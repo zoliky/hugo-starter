@@ -1,6 +1,6 @@
 ---
-#+TITLE: "Index"
-#+DRAFT: false
+title: "Index"
+draft: false
 ---
 
 This is the index page.

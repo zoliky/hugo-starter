@@ -12,3 +12,4 @@ theme        = "basic"
 [params]
   author      = "Zoltan Kiraly"
   description = "My New Hugo Site"
+  images      = ["site-feature-image.jpg"]

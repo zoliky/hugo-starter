@@ -11,5 +11,36 @@
 body {
   margin: 0;
   padding: 0;
-  background: lightyellow;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.nav,
+.footer {
+  color: #fff;
+  padding: .5em 1em;
+  background: #333;
+}
+
+.nav > ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.nav > ul > li + li {
+  margin-left: 1em;
+}
+
+.nav > ul > li > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 48em) {
+
 }
