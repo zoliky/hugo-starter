@@ -4,3 +4,17 @@
 #+DATE: <2021-01-06 Wed>
 
 This project is work in progress.
+
+Highlights:
+
+- [DONE] Sass
+- [DONE] Babel
+- [DONE] RSS
+- [DONE] Blog
+- [DONE] Taxonomies
+
+- [TODO] CSS Reset
+- [TODO] SEO Optimizations
+- [TODO] Add Support for Searching
+- [TODO] Add Twitter Cards and OpenGraph
+- [TODO] Add Support for Blog Comments
