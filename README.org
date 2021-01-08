@@ -13,8 +13,9 @@ Highlights:
 - [DONE] Blog
 - [DONE] Taxonomies
 
+
 - [TODO] CSS Reset
 - [TODO] SEO Optimizations
 - [TODO] Add Support for Searching
 - [TODO] Add Twitter Cards and OpenGraph
-- [TODO] Add Support for Blog Comments
+- [TODO] Add Support for Blog Commenting
