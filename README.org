@@ -5,7 +5,7 @@
 
 This project is work in progress.
 
-[[./screenshot.png]]
+[[./demo.png]]
 
 Highlights:
 
