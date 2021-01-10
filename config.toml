@@ -4,15 +4,15 @@
 #         AUTHOR: Zoltán Király <zoliky@gmail.com>
 # ----------------------------------------------------------------------------
 
-title        = "My New Hugo Site"
-baseURL      = "http://example.org/"
+title        = "New Hugo Site"
+baseURL      = "https://yourdomain.com/"
 languageCode = "en-US"
 theme        = "basic"
 paginate     = 1
 
 [params]
   author      = "Zoltan Kiraly"
-  description = "My New Hugo Site"
+  description = "New Hugo Site"
   images      = ["site-feature-image.jpg"]
 
 [permalinks]
