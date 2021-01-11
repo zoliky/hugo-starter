@@ -4,12 +4,14 @@
     <h2>{{ .Title }}</h2>
     <p>By {{ .Params.Author }}</p>
     <p>Posted {{ .Date.Format "January 2, 2006" }}</p>
+    {{ with .Params.tags }}
     <span class="tags">
       in
-      {{ range .Params.tags }}
+      {{ range . }}
         <a class="tag" href="/tags/{{ . | urlize }}">{{ . }}</a>
       {{ end }}
     </span>
+    {{ end }}
   </header>
 
   <section class="body">

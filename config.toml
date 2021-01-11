@@ -8,7 +8,7 @@ title        = "New Hugo Site"
 baseURL      = "https://yourdomain.com/"
 languageCode = "en-US"
 theme        = "basic"
-paginate     = 1
+paginate     = 10
 
 [params]
   author      = "Zoltan Kiraly"
@@ -38,3 +38,6 @@ paginate     = 1
   [[related.indices]]
     name   = "date"
     weight = 10.0
+
+[social]
+  twitter = "zoliky"

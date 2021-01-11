@@ -1,7 +1,10 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
-draft: true
+title: "Fourth Post"
+date: 2021-01-11T13:53:51+02:00
+author: Zoltan Kiraly
+year: "2021"
+month: "2021/01"
+draft: false
 ---
 
 * Headline
