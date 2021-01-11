@@ -6,7 +6,6 @@
   <meta name="description" content="{{ with .Page.Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   <title>{{ if .Page.IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
   {{ partial "twitter-card" . }}
-
   {{ "<!-- Favicon -->" | safeHTML }}
   <link rel="apple-touch-icon" sizes="180x180" href="{{ "apple-touch-icon.png" | relURL }}">
   <link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32x32.png" | relURL }}">
@@ -16,11 +15,11 @@
   {{ "<!-- Styles -->" | safeHTML }}
   {{- $style := resources.Get "sass/main.scss" | toCSS | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}">
-  {{ range .AlternativeOutputFormats }}
-    {{ $link := `<link rel="%s" type="%s" href="%s" title="%s">` }}
-    {{ $title := printf "%s - %s" $.Page.Title $.Site.Title }}
-    {{ if $.Page.IsHome }}{{ $title = $.Site.Title }}{{ end }}
-    {{ printf $link .Rel .MediaType .Permalink $title | safeHTML }}
+
+  {{ "<!-- RSS -->" | safeHTML }}
+  {{ with .OutputFormats.Get "rss" -}}
+    {{ $link := `<link rel="%s" type="%s" href="%s" title="%s">` -}}
+    {{ printf $link .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML -}}
   {{ end }}
   
   {{ "<!-- Toolbar color for Android devices -->" | safeHTML }}
