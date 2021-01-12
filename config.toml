@@ -59,7 +59,7 @@ paginate = 10
     url    = "/posts"
     weight = 3
 
-  # Three level drop down menu
+  # A three-level deep menu
   [[menu.main]]
     identifier = "services"
     name       = "Services"
