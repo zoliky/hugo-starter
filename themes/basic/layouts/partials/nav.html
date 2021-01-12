@@ -1,8 +1,11 @@
 <nav class="nav">
   <ul class="nav-menu">
-    <li><a href="/">Home</a></li>
-    <li><a href="/about">About</a></li>
-    <li><a href="/posts">Blog</a></li>
-    <li><a href="/contact">Contact</a></li>
+    {{ $current := . }}
+    {{ range .Site.Menus.nav }}
+    {{ $active := or ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .) }}
+    {{ $active = or $active (eq .Name $current.Title) }}
+    {{ $active = or $active (and (eq .Name "About Us") (eq $current.Section "about")) }}
+    <li><a class="{{ if $active }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a></li>
+    {{ end }}
   </ul>
 </nav>
