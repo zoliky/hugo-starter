@@ -59,28 +59,28 @@ paginate = 10
     url    = "/posts"
     weight = 3
 
-  # Dropdown menu
-  # Menu
+# Dropdown menu
+# Menu
+[[menu.main]]
+  identifier = "services"
+  name       = "Services"
+  url        = "/services"
+  weight     = 4
+
+  # Sub-menu
   [[menu.main]]
-    identifier = "services"
-    name       = "Services"
-    url        = "/services"
+    identifier = "marketing"
+    parent     = "services"
+    name       = "Marketing"
+    url        = "/marketing"
     weight     = 4
 
-    # Sub-menu
-    [[menu.main]]
-      identifier = "marketing"
-      parent     = "services"
-      name       = "Marketing"
-      url        = "/marketing"
-      weight     = 4
-
-      # Sub-sub-menu
-      [[menu.main]]
-        parent = "marketing"
-        name   = "SEO"
-        url    = "/seo"
-        weight = 4
+  # Sub-sub-menu
+  [[menu.main]]
+    parent = "marketing"
+    name   = "SEO"
+    url    = "/seo"
+    weight = 4
 
 [social]
   twitter = "zoliky"
