@@ -59,28 +59,43 @@ paginate = 10
     url    = "/posts"
     weight = 3
 
-# Dropdown menu
-# Menu
-[[menu.main]]
-  identifier = "services"
-  name       = "Services"
-  url        = "/services"
-  weight     = 4
-
-# Sub-menu
-[[menu.main]]
-  identifier = "marketing"
-  parent     = "services"
-  name       = "Marketing"
-  url        = "/marketing"
-  weight     = 4
-
-# Sub-sub-menu
-[[menu.main]]
-  parent = "marketing"
-  name   = "SEO"
-  url    = "/seo"
-  weight = 4
+  # Dropdown menu
+  # Menu
+  [[menu.main]]
+    identifier = "services"
+    name       = "Services"
+    url        = "/services"
+    weight     = 4
+  
+  # Sub-menu
+  [[menu.main]]
+    identifier = "marketing"
+    parent     = "services"
+    name       = "Marketing"
+    url        = "/marketing"
+    weight     = 4
+  
+  # Sub-sub-menu
+  [[menu.main]]
+    parent = "marketing"
+    name   = "SEO"
+    url    = "/seo"
+    weight = 4
 
 [social]
   twitter = "zoliky"
+
+  [[social.icon]]
+    icon  = "icon-facebook"
+    title = "Connect with us on Facebook"
+    url   = "https://www.facebook.com/yourfacebook"
+
+  [[social.icon]]
+    icon  = "icon-twitter"
+    title = "Follow us on Twitter"
+    url   = "https://twitter.com/yourtwitter"
+  
+  [[social.icon]]
+    icon  = "icon-email"
+    title = "Contact us via email"
+    url   = "mailto:youremail@example.com"
