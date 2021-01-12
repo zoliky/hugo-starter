@@ -59,15 +59,15 @@ paginate = 10
     url    = "/posts"
     weight = 3
 
-  # A three-level deep menu
-  # Outer menu item
+  # Configuration to implement a dropdown menu
+  # Menu item
   [[menu.main]]
     identifier = "services"
     name       = "Services"
     url        = "/services"
     weight     = 4
 
-  # Inner menu item
+  # Sub menu item
   [[menu.main]]
     identifier = "marketing"
     parent     = "services"
@@ -75,7 +75,7 @@ paginate = 10
     url        = "/marketing"
     weight     = 4
 
-  # Inner inner menu item
+  # Sub sub menu item
   [[menu.main]]
     parent = "marketing"
     name   = "SEO"
