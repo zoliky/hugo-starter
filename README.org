@@ -5,7 +5,7 @@
 
 *Work in progress*
 
-This template aims to serve as a base when building a new website with Hugo.
+This project aims to serve as a base when building a new website with Hugo.
 
 ** Installation
 
