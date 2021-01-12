@@ -3,8 +3,15 @@
 #+EMAIL: zoliky@gmail.com
 #+DATE: <2021-01-06 Wed>
 
-*Work in progress.*
+*Work in progress*
 
-This project aims to serve as a base when building a new website with Hugo.
+This template aims to serve as a base when building a new website with Hugo.
+
+** Installation
+
+#+begin_src shell
+$ cd ~
+$ git clone https://github.com/zoliky/hugo-starter.git 
+#+end_src
 
 [[./demo.png]]
