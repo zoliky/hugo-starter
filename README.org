@@ -3,6 +3,9 @@
 #+EMAIL: zoliky@gmail.com
 #+DATE: <2021-01-06 Wed>
 
+This project aims to cut down some of the repetitive tasks when
+creating a new Hugo theme.
+
 This project is work in progress.
 
 [[./demo.png]]

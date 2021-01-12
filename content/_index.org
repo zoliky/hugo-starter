@@ -5,10 +5,10 @@ draft: false
 
 * Home page
 
-Welcome to your new Hugo website.
+Welcome to your new Hugo site.
 
 Hugo uses a separate layout for the home page because it assumes
-you’ll want your home page to have a different look than other
+you'll want your home page to have a different look than other
 content pages.
 
 When Hugo builds the site, it'll construct the home page by combining
