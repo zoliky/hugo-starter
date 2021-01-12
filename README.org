@@ -11,7 +11,11 @@ This project aims to serve as a base when building a new website with Hugo.
 
 #+begin_src shell
 $ cd ~
-$ git clone https://github.com/zoliky/hugo-starter.git 
+$ git clone https://github.com/zoliky/hugo-starter.git
+$ cd hugo-starter
+$ hugo server
 #+end_src
+
+** 
 
 [[./demo.png]]
