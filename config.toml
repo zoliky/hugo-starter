@@ -59,15 +59,15 @@ paginate = 10
     url    = "/posts"
     weight = 3
 
-  # Configuration to implement a dropdown menu
-  # Menu item
+  # Dropdown menu
+  # Menu
   [[menu.main]]
     identifier = "services"
     name       = "Services"
     url        = "/services"
     weight     = 4
 
-  # Sub menu item
+  # Sub-menu
   [[menu.main]]
     identifier = "marketing"
     parent     = "services"
@@ -75,7 +75,7 @@ paginate = 10
     url        = "/marketing"
     weight     = 4
 
-  # Sub sub menu item
+  # Sub-sub-menu
   [[menu.main]]
     parent = "marketing"
     name   = "SEO"
