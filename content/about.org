@@ -3,4 +3,5 @@ title: "About"
 draft: false
 ---
 
-This is the about page.
+The "About" page has a "single page template" associated
+with it ~themes/layouts/baseof/single.html~.

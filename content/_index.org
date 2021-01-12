@@ -3,4 +3,15 @@ title: "Index"
 draft: false
 ---
 
-This is the index page.
+* Home page
+
+Welcome to your new Hugo website.
+
+Hugo uses a separate layout for the home page because it assumes
+you’ll want your home page to have a different look than other
+content pages.
+
+When Hugo builds the site, it'll construct the home page by combining
+the content file ~content/_index.org~ with the layout file
+~themes/basic/layouts/index.html~, which will then use the baseof file
+~/themes/basic/layout/_default/baseof.html~.

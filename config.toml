@@ -66,19 +66,19 @@ paginate = 10
     weight     = 4
   
   # Sub-menu
-  [[menu.main]]
-    identifier = "marketing"
-    parent     = "services"
-    name       = "Marketing"
-    url        = "/marketing"
-    weight     = 4
+#  [[menu.main]]
+#    identifier = "marketing"
+#    parent     = "services"
+#    name       = "Marketing"
+#    url        = "/marketing"
+#    weight     = 4
   
   # Sub-sub-menu
-  [[menu.main]]
-    parent = "marketing"
-    name   = "SEO"
-    url    = "/seo"
-    weight = 4
+#  [[menu.main]]
+#    parent = "marketing"
+#    name   = "SEO"
+#    url    = "/seo"
+#    weight = 4
 
 [social]
   twitter = "zoliky"
