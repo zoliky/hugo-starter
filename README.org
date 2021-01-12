@@ -7,8 +7,6 @@
 
 This project aims to serve as a base when building a new website with Hugo.
 
-[[./demo.png]]
-
 ** Installation
 
 #+begin_src shell
