@@ -8,8 +8,8 @@ title        = "New Hugo Site"
 baseURL      = "https://yourdomain.com/"
 languageCode = "en-US"
 theme        = "basic"
-paginate     = 10
 
+# Site params
 [params]
   author      = "Zoltan Kiraly"
   description = "New Hugo Site"
@@ -38,6 +38,26 @@ paginate     = 10
   [[related.indices]]
     name   = "date"
     weight = 10.0
+
+# The number of posts per page
+paginate = 10
+
+# Menus
+[menu]
+  [[menu.nav]]
+    name   = "Home"
+    url    = "/"
+    weight = 1
+  
+  [[menu.nav]]
+    name   = "About Us"
+    url    = "/about"
+    weight = 2
+  
+  [[menu.nav]]
+    name   = "Blog"
+    url    = "/posts"
+    weight = 3
 
 [social]
   twitter = "zoliky"

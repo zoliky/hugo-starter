@@ -18,10 +18,10 @@
 
   {{ "<!-- RSS -->" | safeHTML }}
   {{ with .OutputFormats.Get "rss" -}}
-    {{ $link := `<link rel="%s" type="%s" href="%s" title="%s">` -}}
+    {{ $link := `<link rel="%s" type="%s" href="%s" title="%s" />` -}}
     {{ printf $link .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML -}}
   {{ end }}
   
-  {{ "<!-- Toolbar color for Android devices -->" | safeHTML }}
+  {{ "<!-- Toolbar color on Android devices -->" | safeHTML }}
   <meta name="theme-color" content="#ffffff">
 </head>
