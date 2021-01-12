@@ -9,6 +9,9 @@ This project aims to serve as a base when building a new website with Hugo.
 
 ** Installation
 
+Assuming that Hugo has been already installed on your computer, issue the
+following commands  in your terminal:
+
 #+begin_src shell
 $ cd ~
 $ git clone https://github.com/zoliky/hugo-starter.git
