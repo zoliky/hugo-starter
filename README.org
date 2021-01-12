@@ -5,7 +5,6 @@
 
 *Work in progress.*
 
-This project aims to cut down some of the repetitive tasks when
-creating a new Hugo theme.
+This project aims to serve as a base when building a new website with Hugo.
 
 [[./demo.png]]
