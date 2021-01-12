@@ -59,8 +59,6 @@ paginate = 10
     url    = "/posts"
     weight = 3
 
-  # Dropdown menu
-  # Menu
   [[menu.main]]
     identifier = "services"
     name       = "Services"
