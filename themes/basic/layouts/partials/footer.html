@@ -1,5 +1,3 @@
 <footer class="footer">
-  <p>
-    {{ with replace .Site.Params.copyright "{currentYear}" now.Year }}{{ . | markdownify}}{{ end }}
-  </p>
+  <p>{{ with replace .Site.Params.copyright "{currentYear}" now.Year }}{{ . | markdownify}}{{ end }}</p>
 </footer>
