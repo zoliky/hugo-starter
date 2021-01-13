@@ -10,7 +10,7 @@ This project aims to serve as a base when building a new website with Hugo.
 ** Mobile
 
 Because almost 80% of the web traffic originate from mobile phones these days,
-optimizing the layout for mobile was my top priority.
+optimizing the layout for mobile phones was my highest priority.
 
 [[./mobile.png]]
 
