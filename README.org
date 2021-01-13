@@ -9,8 +9,8 @@ This project aims to serve as a base when building a new website with Hugo.
 
 ** Mobile and Tablet Devices
 
-Because about 80% of search traffic and visitors originate from a mobile device,
-adding proper mobile support was my highest priority.
+Because about 80% of search traffic and website visitors originate from a mobile device
+these adding, adding full mobile support was my top priority.
 
 [[./mobile.png]]
 
