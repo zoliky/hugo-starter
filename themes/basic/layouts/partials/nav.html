@@ -44,12 +44,25 @@
               <use href="#icon-angle-down" xlink:href="#icon-angle-down"></use>
             </svg>
           </button>
+          <ul class="sub-menu">
+            {{ range .Children }}
+            <li class="menu-item">
+              <a href="{{ .URL }}">
+                {{ .Name }}
+                {{ if .HasChildren }}
+                <svg class="icon icon-angle-down">
+                  <use href="#icon-angle-down" xlink:href="#icon-angle-down"></use>
+                </svg>
+                {{ end }}
+              </a>
+            </li>
+            {{ end }}
+          </ul>
           {{ end }}
         </li>
         {{ end }}
       </ul>
       {{ end }}
-
     </li>
     {{ end }}
     </ul>
