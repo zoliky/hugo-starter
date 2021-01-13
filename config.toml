@@ -14,7 +14,6 @@ paginate     = 2 # The number of posts per page
 [params]
   author      = "Your Name"
   description = "New Hugo Site"
-  # {currentYear} is automatically substituted for the current year
   copyright   = "Copyright {currentYear} Your Name. All rights reserved."
   images      = ["site-feature-image.jpg"]
 
