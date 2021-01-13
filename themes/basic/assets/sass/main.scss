@@ -19,11 +19,13 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
 p {
-  line-height: 1.5;
-  font-size: 1.1rem;
+  line-height: 1.8;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 a {
@@ -36,12 +38,23 @@ code {
   font-size: .9rem;
 }
 
+h2 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1200px;
 }
 
 /* Header */
+.site-title {
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+}
+
 .site-title > a,
 .site-title > a:visited {
   color: #111;
@@ -53,10 +66,31 @@ code {
 
 @import "navbar";
 
+.main {
+  margin: 2.5em 0;
+}
+
 .footer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  // flex-direction: column;
+  padding: .6em 1em;
+  background: #636873;
+}
+
+.copyright {
   color: #fff;
-  padding: .5em 1em;
-  background: #494259;
+
+}
+
+.footer > p {
+  margin: 0;
+}
+
+.powered-by {
+  width: 6rem;
 }
 
 .pagination {
@@ -95,5 +129,9 @@ code {
 @media only screen and (min-width: 488em) {
   .pagination {
     width: 30%;
+  }
+
+  .footer {
+    flex-direction: row;
   }
 }

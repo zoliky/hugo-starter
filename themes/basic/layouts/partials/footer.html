@@ -1,3 +1,8 @@
 <footer class="footer">
-  <p>Copyright {{ now.Format "2006" }} {{ .Site.Params.author }}. All rights reserved.</p>
+  <div class="copyright">
+    <p>Copyright {{ now.Format "2006" }} {{ .Site.Params.author }}. All rights reserved.</p>
+  </div>
+  <div class="powered-by">
+    <img src="{{ "images/hugo-logo-wide.svg" | relURL }}" alt="Hugo Logo">
+  </div>
 </footer>

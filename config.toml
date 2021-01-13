@@ -14,7 +14,7 @@ paginate = 2
 
 # Site params
 [params]
-  author      = "Zoltan Kiraly"
+  author      = "King Web Solutions"
   description = "New Hugo Site"
   images      = ["site-feature-image.jpg"]
 

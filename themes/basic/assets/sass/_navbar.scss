@@ -1,5 +1,5 @@
 .main-navigation {
-  background: #494259;
+  background: #4A8C88;
 }
 
 /* Navigation */
@@ -159,6 +159,12 @@
     border: 0;
     padding: 0;
     margin-bottom: 0;
+  }
+
+  /* added */
+  .main-navigation > div > ul > li > a {
+    color: #fff;
+    font-weight: 600;
   }
 
   .main-navigation li {
