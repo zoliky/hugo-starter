@@ -18,6 +18,8 @@ building the layout with a responsive "mobile-first" approach was my priority.
 
 [[./screenshot.png]]
 
+** Installation
+
 #+begin_src shell
 $ cd ~
 $ git clone https://github.com/zoliky/hugo-starter.git
