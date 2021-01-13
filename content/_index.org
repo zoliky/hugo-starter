@@ -5,7 +5,7 @@ draft: false
 
 * Home page
 
-Welcome to your new Hugo site.
+Welcome to Hugo!
 
 Hugo uses a separate layout for the home page because it assumes
 you'll want your home page to have a different look than other

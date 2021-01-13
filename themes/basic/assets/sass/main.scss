@@ -1,4 +1,10 @@
+@import "normalize";
+
 :root {
+  font-size: 1em;
+  line-height: 1.15;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -15,8 +21,19 @@ body {
   padding: 0;
 }
 
+p {
+  line-height: 1.5;
+  font-size: 1.1rem;
+}
+
 a {
   text-decoration: none;
+  background-color: transparent;
+}
+
+code {
+  font-family: monospace, monospace;
+  font-size: .9rem;
 }
 
 .container {
