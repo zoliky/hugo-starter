@@ -7,11 +7,11 @@
 
 This project aims to serve as a base when building a new website with Hugo.
 
-** Desktop
+** Desktop and Laptop
 
 [[./screenshot.png]]
 
-** Mobile
+** Mobile and Tablet Devices
 
 [[./mobile.png]]
 
