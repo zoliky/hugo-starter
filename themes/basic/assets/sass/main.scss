@@ -71,26 +71,13 @@ h2 {
 }
 
 .footer {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  // flex-direction: column;
-  padding: .6em 1em;
-  background: #4A8C88;
-}
-
-.copyright {
   color: #fff;
-
+  padding: .6em 1.1em;
+  background: #4A8C88;
 }
 
 .footer > p {
   margin: 0;
-}
-
-.powered-by {
-  width: 6rem;
 }
 
 .pagination {
