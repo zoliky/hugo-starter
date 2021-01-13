@@ -1,6 +1,8 @@
 <footer class="footer">
   <div class="copyright">
-    <p>Copyright {{ now.Format "2006" }} {{ .Site.Params.author }}. All rights reserved.</p>
+    <p>
+      {{ with replace .Site.Params.copyright "{currentYear}" now.Year }}{{ . | markdownify}}{{ end }}
+    </p>
   </div>
   <div class="powered-by">
     <img src="{{ "images/hugo-logo-wide.svg" | relURL }}" alt="Hugo Logo">

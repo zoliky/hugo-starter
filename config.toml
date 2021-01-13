@@ -8,16 +8,16 @@ title        = "New Hugo Site"
 baseURL      = "https://yourdomain.com/"
 languageCode = "en-US"
 theme        = "basic"
-
-# The number of posts per page
-paginate = 2
+paginate     = 2 # The number of posts per page
 
 # Site params
 [params]
-  author      = "King Web Solutions"
+  author      = "Your Name"
   description = "New Hugo Site"
+  copyright   = "Copyright {currentYear} Your Name. All rights reserved."
   images      = ["site-feature-image.jpg"]
 
+# Permalinks
 [permalinks]
   posts = "posts/:year/:month/:slug"
   year  = "/posts/:slug/"
@@ -29,6 +29,7 @@ paginate = 2
   tag      = "tags"
   category = "categories"
 
+# Related content
 [related]
   threshold    = 80.0
   includeNewer = false
