@@ -5,6 +5,8 @@
 
 This project aims to serve as a base when building a new website with Hugo.
 
+[[./screenshot.png]]
+
 ** Installation
 
 Assuming that Hugo has been already installed on your computer, issue the
