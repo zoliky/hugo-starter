@@ -24,6 +24,16 @@ a {
   max-width: 1200px;
 }
 
+/* Header */
+.site-title > a,
+.site-title > a:visited {
+  color: #111;
+}
+
+.site-title > a:hover {
+  color: #4a4a4a;
+}
+
 @import "navbar";
 
 .footer {
