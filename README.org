@@ -9,7 +9,7 @@ This project aims to serve as a base when building a new website with Hugo.
 
 ** Desktop
 
-[[./desktop.png]]
+[[./screenshot.png]]
 
 ** Mobile
 
