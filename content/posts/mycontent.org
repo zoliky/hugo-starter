@@ -1,0 +1,15 @@
+---
+title: "Mycontent"
+date: 2021-01-13T03:20:01+02:00
+author: Zoltan Kiraly
+year: "2021"
+month: "2021/01"
+draft: false
+---
+
+* Headline
+
+Org uses single characters to markup *bold* /italic/, _underline_, ~code~, and =verbatim=.
+Links also use minimal markup. [[https://gohugo.io/][Hugo Website]]
+
+More on markup: https://orgmode.org/manual/Markup-for-Rich-Contents.html
