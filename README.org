@@ -10,7 +10,7 @@ This project aims to serve as a base when building a new website with Hugo.
 ** Mobile
 
 Because almost 80% of the web traffic originate from mobile phones these days,
-building the layout using a "mobile-first" approach was my priority.
+building the layout using a responsive "mobile-first" approach was my priority.
 
 [[./mobile.png]]
 
