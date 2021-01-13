@@ -11,7 +11,7 @@ This project aims to serve as a base when building a new website with Hugo.
 
 [[./mobile.png]]
 
-** Desktop and Laptop
+** Desktop
 
 [[./screenshot.png]]
 
