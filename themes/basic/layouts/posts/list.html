@@ -11,11 +11,11 @@
         {{ .Summary }}
       </div>
       <footer>
-        <span class="posted-by">{{ .Params.author }}</span>
-        <time>on {{ .Date | dateFormat "January 2, 2006" }}</time>
+        <span class="posted-by">{{ .Params.author }} on </span>
+        <time>{{ .Date | dateFormat "January 2, 2006" }}</time>
       </footer>
     </article>
-  {{ end }}
+    {{ end }}
   </div>
 </section>
 {{ template "_internal/pagination.html" . }}
