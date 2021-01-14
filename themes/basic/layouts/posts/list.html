@@ -1,21 +1,22 @@
 {{ define "main" }}
-  <h2>{{ .Title }}</h2>
-  {{ range .Paginator.Pages }}
-  <article>
-    <header>
-      <h3>
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-      </h3>
-      <time>
-        {{ .Date | dateFormat "January" }}
-        {{ .Date | dateFormat "2" }}
-      </time>
-    </header>
-
-    {{ .Summary }}
-    
-  </article>
+<section class="blog">
+  <div class="blog-container">
+    <h2>{{ .Title }}</h2>
+    {{ range .Paginator.Pages }}
+    <article class="blog-post">
+      <header>
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+      </header>
+      <div class="post-summary">
+        {{ .Summary }}
+      </div>
+      <footer>
+        <span class="posted-by">{{ .Params.author }}</span>
+        <time>on {{ .Date | dateFormat "January 2, 2006" }}</time>
+      </footer>
+    </article>
   {{ end }}
-
-  {{ template "_internal/pagination.html" . }}
+  </div>
+</section>
+{{ template "_internal/pagination.html" . }}
 {{ end }}
