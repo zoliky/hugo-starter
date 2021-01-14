@@ -1,21 +1,38 @@
 {{ define "main" }}
-<article class="post">
-  <header>
-    <h2>{{ .Title }}</h2>
-    <p>By {{ .Params.Author }}</p>
-    <p>Posted {{ .Date.Format "January 2, 2006" }}</p>
-    {{ with .Params.tags }}
-    <span class="tags">
-      in
-      {{ range . }}
-        <a class="tag" href="/tags/{{ . | urlize }}">{{ . }}</a>
-      {{ end }}
-    </span>
-    {{ end }}
-  </header>
+<section class="blog">
+  <div class="blog-container">
+    <article class="blog-post">
+      <header>
+        <h2>{{ .Title }}</h2>
+      </header>
+      <section class="post-content">
+        {{ .Content }}
+      </section>
 
-  <section class="body">
-    {{ .Content }}
-  </section>
-</article>
+      <p>By {{ .Params.Author }}</p>
+      <p>Posted {{ .Date.Format "January 2, 2006" }}</p>
+      {{ with .Params.tags }}
+      <span class="tags">
+        in
+        {{ range . }}
+          <a class="tag" href="/tags/{{ . | urlize }}">{{ . }}</a>
+        {{ end }}
+      </span>
+      {{ end }}
+
+
+      <section class="related">
+        <h3>Related posts</h3>
+        {{ $related := .Site.RegularPages.Related . | first 5 }}
+        {{ with $related }}
+        <ul>
+          {{ range . }}
+          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+          {{ end }}
+        </ul>
+        {{ end }}
+      </section>
+    </article>
+  </div>
+</section>
 {{ end }}
