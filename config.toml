@@ -75,7 +75,7 @@ paginate     = 2 # The number of posts per page
     url        = "/marketing"
     weight     = 4
   
-  # Sub-sub-menu
+  # Sub sub-menu
   [[menu.main]]
     parent = "marketing"
     name   = "SEO"
