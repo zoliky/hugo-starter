@@ -7,11 +7,9 @@
 
 This project aims to serve as a base when building a new website with Hugo.
 
-** Installation
+** Getting Started
 
-#+begin_src shell
-$ cd ~
-$ git clone https://github.com/zoliky/hugo-starter.git
-$ cd hugo-starter
-$ hugo server
-#+end_src
+1. Install Hugo.
+2. Download or clone this repository.
+3. In terminal, ~cd~ into the repository, then run ~hugo server~.
+4. Visit the URL Hugo prints in the terminal to see your site.
