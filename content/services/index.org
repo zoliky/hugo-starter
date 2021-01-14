@@ -1,8 +1,8 @@
 ---
-title: "Services"
+title: "About us"
 draft: false
 ---
 
-This is the services page.
+Senior members of the marketing department:
 
-[[./images/flower.jpg]]
+{{< postimage "images/dogs.jpg" "test" >}}
