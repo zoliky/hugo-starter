@@ -15,9 +15,16 @@ with it ~themes/layouts/baseof/single.html~.
 | First   | Second  | Third   |
 
 #+begin_src javascript
-function sum(x, y) {
-  return x + y;
-}
+"use strict";
 
-console.log(num(2, 4));
+const panelHeader = document.querySelectorAll(".panel-header");
+
+panelHeader.forEach(value => {
+  value.addEventListener("click", event => {
+    event.preventDefault();
+    value.parentElement.classList.toggle("open");
+    const panel = value.nextElementSibling;
+    panel.style.height = panel.style.height ? null : panel.scrollHeight + "px";
+  });
+});
 #+end_src

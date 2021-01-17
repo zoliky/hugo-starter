@@ -8,30 +8,30 @@
       <section class="post-content">
         {{ .Content }}
       </section>
-
-      <p>By {{ .Params.Author }}</p>
-      <p>Posted {{ .Date.Format "January 2, 2006" }}</p>
-      {{ with .Params.tags }}
-      <span class="tags">
-        in
-        {{ range . }}
+      <section class="blog-meta">
+        <p>Posted on 
+        <time datetime="{{ .Date | dateFormat "2006-01-02" }}">{{ .Date | dateFormat "January 2, 2006" }}</time>
+        <span class="posted-by">by {{ .Params.author }}</span></p>
+        {{ with .Params.tags }}
+        <p>In
+          {{ range . }}
           <a class="tag" href="/tags/{{ . | urlize }}">{{ . }}</a>
+          {{ end }}
+        </p>
         {{ end }}
-      </span>
-      {{ end }}
+      </section>
 
-
+      {{ $related := .Site.RegularPages.Related . | first 5 }}
+      {{ with $related }}
       <section class="related">
         <h3>Related posts</h3>
-        {{ $related := .Site.RegularPages.Related . | first 5 }}
-        {{ with $related }}
         <ul>
           {{ range . }}
           <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
           {{ end }}
         </ul>
-        {{ end }}
       </section>
+      {{ end }}
     </article>
   </div>
 </section>

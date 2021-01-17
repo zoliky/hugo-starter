@@ -10,6 +10,8 @@ languageCode = "en-US"
 theme        = "basic"
 paginate     = 2 # The number of posts per page
 
+pygmentsUseClasses = true
+
 # Site params
 [params]
   author      = "Your Name"

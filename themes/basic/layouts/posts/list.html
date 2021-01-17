@@ -12,7 +12,7 @@
       </section>
       <footer>
         <span>Posted on </span>
-        <time>{{ .Date | dateFormat "January 2, 2006" }}</time>
+        <time datetime="{{ .Date | dateFormat "2006-01-02" }}">{{ .Date | dateFormat "January 2, 2006" }}</time>
         <span class="posted-by">by {{ .Params.author }}</span>
       </footer>
     </article>

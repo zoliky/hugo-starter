@@ -1,8 +1,8 @@
 "use strict";
 
-// Check if Babel is enabled
-const isBabel = !(class {}.toString().indexOf('class ') === 0);
-console.log("Babel enabled:", isBabel);
+// Babel
+//const isBabel = !(class {}.toString().indexOf('class ') === 0);
+//console.log("Babel enabled:", isBabel);
 
 // Menu
 const menuToggleBtn = document.querySelector(".menu-toggle");
