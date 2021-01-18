@@ -6,10 +6,14 @@
   <meta name="description" content="{{ with .Page.Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   <title>{{ if .Page.IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
 
+  {{ if .Site.Params.twittercard -}}
   {{ "<!-- Twitter card -->" | safeHTML }}
   {{- partial "twitter-card.html" . }}
+  {{ end }}
+  {{ if .Site.Params.opengraph -}}
   {{ "<!-- OpenGraph -->" | safeHTML }}
   {{ partial "opengraph.html" . }}
+  {{ end }}
 
   {{ "<!-- Favicon -->" | safeHTML }}
   <link rel="apple-touch-icon" sizes="180x180" href="{{ "apple-touch-icon.png" | relURL }}">

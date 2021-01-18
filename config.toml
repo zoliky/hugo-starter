@@ -30,6 +30,8 @@ defaultContentLanguage = "en"
   description = "New Hugo Site"
   copyright   = "Copyright {currentYear} King Web Solutions. All rights reserved."
   images      = ["site-social.png"]
+  twittercard = true
+  opengraph   = true
 
 # Permalinks
 [permalinks]
