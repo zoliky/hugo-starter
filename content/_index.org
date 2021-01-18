@@ -18,6 +18,6 @@ the content file ~content/_index.org~ with the layout file
 
 This project is provided as-is. I do not accept pull requests.
 I built this project to serve as a starter for new projects at [[https://www.kingwebsolutions.net/][King Web Solutions]].
-A Gatsby and Wordpress starter is planned, too.
+A Gatsby and Wordpress starter is in the plan, too.
 
 [[https://github.com/zoliky/hugo-starter][https://github.com/zoliky/hugo-starter]]
