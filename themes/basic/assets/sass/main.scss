@@ -32,6 +32,21 @@ a {
   background-color: transparent;
 }
 
+i {
+  font-style: normal;
+}
+
+.screen-readers {
+  position: absolute;
+  padding: 0;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
 .button {
   display: inline-block;
   vertical-align: middle;
@@ -138,8 +153,11 @@ h2 {
 
 .footer {
   color: #fff;
-  padding: .6em 1.1em;
+  padding: 0 1.1em;
   background: #4A8C88;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer > p {
@@ -181,6 +199,7 @@ h2 {
 
 @import "orgmode";
 @import "posts";
+@import "social";
 
 @media only screen and (min-width: 48em) {
   .pagination {

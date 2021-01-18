@@ -101,17 +101,17 @@ defaultContentLanguage = "en"
 [social]
   twitter = "zoliky"
 
-  [[social.icon]]
-    icon  = "icon-facebook"
+  [[params.social]]
+    icon  = "ico-facebook"
     title = "Connect with us on Facebook"
-    url   = "https://www.facebook.com/yourfacebook"
+    url   = "https://www.facebook.com/zoliky"
 
-  [[social.icon]]
-    icon  = "icon-twitter"
+  [[params.social]]
+    icon  = "ico-twitter"
     title = "Follow us on Twitter"
-    url   = "https://twitter.com/yourtwitter"
+    url   = "https://twitter.com/zoliky"
   
-  [[social.icon]]
-    icon  = "icon-email"
+  [[params.social]]
+    icon  = "ico-email"
     title = "Contact us via email"
     url   = "mailto:youremail@example.com"

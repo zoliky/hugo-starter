@@ -1,3 +1,8 @@
 <footer class="footer">
-  <p>{{ with replace .Site.Params.copyright "{currentYear}" now.Year }}{{ . | markdownify }}{{ end }}</p>
+  <div class="footer-col-1">
+    <p>{{ with replace .Site.Params.copyright "{currentYear}" now.Year }}{{ . | markdownify }}{{ end }}</p>
+  </div>
+  <div class="footer-col-2">
+    {{ partial "social.html" . }}
+  </div>
 </footer>
