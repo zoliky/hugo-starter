@@ -3,8 +3,7 @@ title: "About"
 draft: false
 ---
 
-The "About" page has a "single page template" associated
-with it ~themes/layouts/baseof/single.html~.
+Org mode table
 
 | First   | Second  | Third   |
 |---------|---------|---------|
@@ -13,6 +12,8 @@ with it ~themes/layouts/baseof/single.html~.
 | First   | Second  | Third   |
 | First   | Second  | Third   |
 | First   | Second  | Third   |
+
+Org mode code block
 
 #+begin_src javascript
 "use strict";

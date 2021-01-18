@@ -16,7 +16,7 @@ pygmentsUseClasses = true
 [params]
   author      = "Your Name"
   description = "New Hugo Site"
-  copyright   = "Copyright {currentYear} Your Name. All rights reserved."
+  copyright   = "Copyright {currentYear} King Web Solutions. All rights reserved."
   images      = ["site-social.png"]
 
 # Permalinks

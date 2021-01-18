@@ -3,6 +3,6 @@ title: "About us"
 draft: false
 ---
 
-Senior members of the marketing department:
+Image shortcode with auto-resizing.
 
 {{< postimage "images/dogs.jpg" "test" >}}
