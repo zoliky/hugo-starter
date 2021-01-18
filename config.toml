@@ -20,6 +20,9 @@ defaultContentLanguage = "en"
   [languages.hu]
     title = "Új Hugo Weblap"
     weight = 2
+  [languages.ro]
+    title = "Noua Pagina Hugo"
+    weight = 2
 
 # Site params
 [params]
