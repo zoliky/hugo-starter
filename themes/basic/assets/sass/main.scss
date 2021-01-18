@@ -38,6 +38,30 @@ figure img {
   height: auto;
 }
 
+.src pre {
+  overflow: auto;
+  padding: .8em;
+  border-radius: 0.3125em;
+}
+
+.src pre::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+}
+
+.src pre::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.src pre::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #bbb;
+}
+  
+//pre.s-code-block::-webkit-scrollbar-corner{background-color:transparent;border-color:transparent}pre.s-code-block>code,code[class*="language-"]
+
 code {
   font-family: monospace, monospace;
   font-size: .9rem;

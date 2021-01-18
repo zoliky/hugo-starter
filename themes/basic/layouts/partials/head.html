@@ -28,12 +28,15 @@
   {{- $style := resources.Get "sass/main.scss" | toCSS | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
+  {{ "<!-- Locales -->" | safeHTML }}
+  <link rel="alternate" href="{{ .Site.BaseURL }}" hreflang="x-default">
+
   {{ "<!-- RSS -->" | safeHTML }}
   {{ with .OutputFormats.Get "rss" -}}
     {{ $link := `<link rel="%s" type="%s" href="%s" title="%s" />` -}}
     {{ printf $link .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML -}}
   {{ end }}
-  
+
   {{ "<!-- Toolbar color on Android devices -->" | safeHTML }}
   <meta name="theme-color" content="#ffffff">
 </head>
