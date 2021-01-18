@@ -48,9 +48,13 @@ a {
   letter-spacing: .10em;
   padding: 0.57em 1.8em;
   border: 1px solid transparent;
-  background: #4A8C88;
+  background: #3b9ba7;
   transition: transform ease-in-out 250ms;
   box-shadow: -4px 3px 8px -3px rgba(0, 0, 0, .5);
+}
+
+.button:hover {
+  transform: scale(1.1);
 }
 
 figure img {
