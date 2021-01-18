@@ -5,7 +5,7 @@
 # ----------------------------------------------------------------------------
 
 title        = "New Hugo Site"
-baseURL      = "https://yourdomain.com/"
+baseURL      = "https://hugo-starter-duw3.onrender.com"
 languageCode = "en-US"
 theme        = "basic"
 paginate     = 2 # The number of posts per page
