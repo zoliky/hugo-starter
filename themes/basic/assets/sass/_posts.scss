@@ -3,9 +3,19 @@
 }
 
 .blog-post {
-  margin: 3.5em 0;
+  margin: 3em 0 3.5em;
 }
 
 .post-summary {
   margin-top: 2em;
+}
+
+a.tag {
+  background-color: #ddd;
+  color: #333;
+  display: inline-block;
+  padding: .05em .4em;
+  border-radius: 0.2em;
+  font-size: 0.9em;
+  text-decoration:  none;
 }
