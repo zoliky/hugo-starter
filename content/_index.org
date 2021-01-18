@@ -17,6 +17,6 @@ the content file ~content/_index.org~ with the layout file
 ~/themes/basic/layout/_default/baseof.html~.
 
 This project is provided as-is. I do not accept feature requests.
-I built this project to serve as a testbed at King Web Solutions. [[https://www.kingwebsolutions.net/][https://www.kingwebsolutions.net/]] 
+I built this project to serve as a starter for new projects at [[https://www.kingwebsolutions.net/][King Web Solutions]].
 
 [[https://github.com/zoliky/hugo-starter][https://github.com/zoliky/hugo-starter]]
