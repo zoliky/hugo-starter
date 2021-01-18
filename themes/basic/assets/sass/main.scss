@@ -33,6 +33,26 @@ a {
   background-color: transparent;
 }
 
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  margin-top: 1.7em;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: #fff;
+  // border-radius: 1.5em;
+  letter-spacing: .10em;
+  padding: 0.57em 1.8em;
+  border: 1px solid transparent;
+  background: #4A8C88;
+  transition: transform ease-in-out 250ms;
+  box-shadow: -4px 3px 8px -3px rgba(0, 0, 0, .5);
+}
+
 figure img {
   width: 100%;
   height: auto;
@@ -148,7 +168,7 @@ h2 {
 @import "orgmode";
 @import "posts";
 
-@media only screen and (min-width: 488em) {
+@media only screen and (min-width: 48em) {
   .pagination {
     width: 30%;
   }
