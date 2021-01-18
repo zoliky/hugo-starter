@@ -3,11 +3,13 @@
 {{ partial "head.html" . }}
 <body>
   <div class="container">
-    {{ partial "header.html" . }}
-    {{ partial "nav.html" . }}
-    <main class="main">
-      {{ block "main" . }}{{ end }}
-    </main>
+    <div class="container-inner">
+      {{ partial "header.html" . }}
+      {{ partial "nav.html" . }}
+      <main class="main">
+        {{ block "main" . }}{{ end }}
+      </main>
+    </div>
     {{ partial "footer.html" . }}
   </div>
 
