@@ -22,7 +22,7 @@ defaultContentLanguage = "en"
     weight = 2
   [languages.ro]
     title = "Noua Pagina Hugo"
-    weight = 2
+    weight = 3
 
 # Site params
 [params]
