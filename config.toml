@@ -35,6 +35,7 @@ disableLanguages       = []
 [languages]
 
   # English
+  # --------------------------------------------------------------------------
   [languages.en]
     weight = 1
 
@@ -75,11 +76,14 @@ disableLanguages       = []
       weight = 4
 
   # Hungarian
+  # --------------------------------------------------------------------------
+  # Override general configuration
   [languages.hu]
     title        = "Új Hugo Weboldal"
     languageCode = "hu"
     weight       = 2
   
+    # Override default site params
     [languages.hu.params]
       description  = "Új Hugo Weboldal"
       copyright    = "Copyright {currentYear} King Web Solutions. Minden jog fenntartva."
