@@ -15,8 +15,13 @@ theme        = "basic"
 paginate     = 2
 
 pygmentsUseClasses     = true
+
+# Fall back to English if there's no translation available
 defaultContentLanguage = "en"
-disableLanguages       = []
+
+# Disable the following language
+# Takes a slice of strings, e.g. ["lang", "lang", "lang"]
+disableLanguages       = ["hu"]
 
 # ----------------------------------------------------------------------------
 # Default site params
