@@ -4,16 +4,19 @@
 #         AUTHOR: Zoltán Király <zoliky@gmail.com>
 # ----------------------------------------------------------------------------
 
+# ----------------------------------------------------------------------------
+# General configuration
+# ----------------------------------------------------------------------------
 title        = "New Hugo Site"
 baseURL      = "https://hugo-starter-duw3.onrender.com"
 languageCode = "en-US"
 theme        = "basic"
-paginate     = 2 # The number of posts per page
+# The number of posts per page
+paginate     = 2
 
-pygmentsUseClasses = true
-
-#disableLanguages = ["hu"]
+pygmentsUseClasses     = true
 defaultContentLanguage = "en"
+disableLanguages       = []
 
 # Site params
 [params]
