@@ -90,6 +90,12 @@ defaultContentLanguage = "en"
     name       = "Marketing"
     url        = "/marketing"
     weight     = 4
+
+    [[menu.main]]
+    parent     = "services"
+    name       = "Other"
+    url        = "/other"
+    weight     = 4
   
   # Sub sub-menu
   [[menu.main]]
