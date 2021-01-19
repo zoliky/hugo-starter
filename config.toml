@@ -27,33 +27,6 @@ disableLanguages       = []
   twittercard = true
   opengraph   = true
 
-# Permalinks
-[permalinks]
-  posts = "posts/:year/:month/:slug"
-  year  = "/posts/:slug/"
-  month = "/posts/:slug/"
-
-# Taxonomies
-[taxonomies]
-  year     = "year"
-  month    = "month"
-  tag      = "tags"
-  category = "categories"
-
-# Related content
-[related]
-  threshold    = 80.0
-  includeNewer = false
-  toLower      = false
-
-  [[related.indices]]
-    name   = "keywords"
-    weight = 100.0
-  
-  [[related.indices]]
-    name   = "date"
-    weight = 10.0
-
 # ----------------------------------------------------------------------------
 # Languages
 # ----------------------------------------------------------------------------
@@ -144,6 +117,37 @@ disableLanguages       = []
       name   = "SEO"
       url    = "/seo"
       weight = 4
+
+# ----------------------------------------------------------------------------
+# Posts
+# ----------------------------------------------------------------------------
+# Permalinks
+[permalinks]
+  posts = "posts/:year/:month/:slug"
+  year  = "/posts/:slug/"
+  month = "/posts/:slug/"
+
+# Taxonomies
+[taxonomies]
+  year     = "year"
+  month    = "month"
+  tag      = "tags"
+  category = "categories"
+
+# Related content
+[related]
+  threshold    = 80.0
+  includeNewer = false
+  toLower      = false
+
+  [[related.indices]]
+    name   = "keywords"
+    weight = 100.0
+  
+  [[related.indices]]
+    name   = "date"
+    weight = 10.0
+
 
 # ----------------------------------------------------------------------------
 # Social
