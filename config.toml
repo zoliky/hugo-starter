@@ -97,7 +97,8 @@ defaultContentLanguage = "en"
     weight       = 2
   
     [languages.hu.params]
-      description = "Új Hugo Weboldal"
+      description  = "Új Hugo Weboldal"
+      copyright    = "Copyright {currentYear} King Web Solutions. Minden jog fenntartva."
 
     [[languages.hu.menu.main]]
       name   = "Címlap"
