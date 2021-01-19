@@ -18,7 +18,9 @@ pygmentsUseClasses     = true
 defaultContentLanguage = "en"
 disableLanguages       = []
 
-# Site params
+# ----------------------------------------------------------------------------
+# Default site params
+# ----------------------------------------------------------------------------
 [params]
   author      = "Your Name"
   description = "New Hugo Site"
