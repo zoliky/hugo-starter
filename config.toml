@@ -19,7 +19,7 @@ pygmentsUseClasses     = true
 # Fall back to English if there's no translation available
 defaultContentLanguage = "en"
 
-# Disable the following language
+# Disable the following languages
 # Takes a slice of strings, e.g. ["lang", "lang", "lang"]
 disableLanguages       = ["hu"]
 
