@@ -13,7 +13,7 @@
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}
     <li class="menu-item {{ if .HasChildren }}menu-item-has-children{{ end}}">
-      <a href="{{ .URL }}">
+      <a href="{{ .URL | absLangURL }}">
         {{ .Name }}
         {{ if .HasChildren }}
         <svg class="icon icon-angle-down" aria-hidden="true" role="img">
@@ -30,7 +30,7 @@
       <ul class="sub-menu">
         {{ range .Children }}
         <li class="menu-item {{ if .HasChildren }}menu-item-has-children{{ end}}">
-          <a href="{{ .URL }}">
+          <a href="{{ .URL | absLangURL }}">
             {{ .Name }}
             {{ if .HasChildren }}
             <svg class="icon icon-angle-down">
@@ -47,7 +47,7 @@
           <ul class="sub-menu">
             {{ range .Children }}
             <li class="menu-item">
-              <a href="{{ .URL }}">
+              <a href="{{ .URL | absLangURL }}">
                 {{ .Name }}
                 {{ if .HasChildren }}
                 <svg class="icon icon-angle-down">

@@ -4,7 +4,7 @@
 #         AUTHOR: Zoltán Király <zoliky@gmail.com>
 # ----------------------------------------------------------------------------
 
-#title        = "New Hugo Site"
+title        = "New Hugo Site"
 baseURL      = "https://hugo-starter-duw3.onrender.com"
 languageCode = "en-US"
 theme        = "basic"
@@ -53,8 +53,7 @@ defaultContentLanguage = "en"
 
 [languages]
   [languages.en]
-  title = "New Hugo Site"
-  weight = 1
+    weight = 1
 
     [[languages.en.menu.main]]
       name   = "Home"
@@ -68,7 +67,7 @@ defaultContentLanguage = "en"
     
     [[languages.en.menu.main]]
       name   = "Blog"
-      url    = "/blog"
+      url    = "/posts"
       weight = 3
 
     [[languages.en.menu.main]]
@@ -93,9 +92,13 @@ defaultContentLanguage = "en"
       weight = 4
 
   [languages.hu]
-  title = "Új Hugo Weboldal"
-  weight = 2
+    title        = "Új Hugo Weboldal"
+    languageCode = "hu"
+    weight       = 2
   
+    [languages.hu.params]
+      description = "Új Hugo Weboldal"
+
     [[languages.hu.menu.main]]
       name   = "Címlap"
       url    = "/"
@@ -108,7 +111,7 @@ defaultContentLanguage = "en"
 
     [[languages.hu.menu.main]]
       name   = "Blog"
-      url    = "/blog"
+      url    = "/posts"
       weight = 3
 
     [[languages.hu.menu.main]]

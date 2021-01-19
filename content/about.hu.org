@@ -1,6 +1,6 @@
 ---
-title: "Magyar"
+title: "Rolunk"
 draft: false
 ---
 
-Magyar
+Rolunk
