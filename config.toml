@@ -11,18 +11,9 @@ theme        = "basic"
 paginate     = 2 # The number of posts per page
 
 pygmentsUseClasses = true
-defaultContentLanguage = "en"
 
-[languages]
-  [languages.en]
-    title = "New Hugo Site"
-    weight = 1
-  [languages.hu]
-    title = "Új Hugo Weblap"
-    weight = 2
-  [languages.ro]
-    title = "Pagina Noua Hugo"
-    weight = 3
+#disableLanguages = ["hu"]
+defaultContentLanguage = "en"
 
 # Site params
 [params]
@@ -60,50 +51,87 @@ defaultContentLanguage = "en"
     name   = "date"
     weight = 10.0
 
-# Menus
-[menu]
-  [[menu.main]]
-    name   = "Home"
-    url    = "/"
-    weight = 1
+[languages]
+  [languages.en]
+  title = "New Hugo Site"
+  weight = 1
+
+    [[languages.en.menu.main]]
+      name   = "Home"
+      url    = "/"
+      weight = 1
+    
+    [[languages.en.menu.main]]
+      name   = "About Us"
+      url    = "/about"
+      weight = 2
+    
+    [[languages.en.menu.main]]
+      name   = "Blog"
+      url    = "/blog"
+      weight = 3
+
+    [[languages.en.menu.main]]
+      identifier = "services"
+      name       = "Services"
+      url        = "/services"
+      weight     = 4
+    
+    # Sub-menu
+    [[languages.en.menu.main]]
+      identifier = "marketing"
+      parent     = "services"
+      name       = "Marketing"
+      url        = "/marketing"
+      weight     = 4
+
+    # Sub sub-menu
+    [[languages.en.menu.main]]
+      parent = "marketing"
+      name   = "SEO"
+      url    = "/seo"
+      weight = 4
+
+  [languages.hu]
+  title = "Új Hugo Weboldal"
+  weight = 2
   
-  [[menu.main]]
-    name   = "About Us"
-    url    = "/about"
-    weight = 2
+    [[languages.hu.menu.main]]
+      name   = "Címlap"
+      url    = "/"
+      weight = 1
 
-  [[menu.main]]
-    name   = "Blog"
-    url    = "/posts"
-    weight = 3
+    [[languages.hu.menu.main]]
+      name   = "Rólunk"
+      url    = "/about"
+      weight = 2
 
-  [[menu.main]]
-    identifier = "services"
-    name       = "Services"
-    url        = "/services"
-    weight     = 4
+    [[languages.hu.menu.main]]
+      name   = "Blog"
+      url    = "/blog"
+      weight = 3
+
+    [[languages.hu.menu.main]]
+      identifier = "services"
+      name       = "Szolgáltatások"
+      url        = "/services"
+      weight     = 4
+    
+    # Sub-menu
+    [[languages.hu.menu.main]]
+      identifier = "marketing"
+      parent     = "services"
+      name       = "Marketing"
+      url        = "/marketing"
+      weight     = 4
+    
+    # Sub sub-menu
+    [[languages.hu.menu.main]]
+      parent = "marketing"
+      name   = "SEO"
+      url    = "/seo"
+      weight = 4
   
-  # Sub-menu
-  [[menu.main]]
-    identifier = "marketing"
-    parent     = "services"
-    name       = "Marketing"
-    url        = "/marketing"
-    weight     = 4
-
-    [[menu.main]]
-    parent     = "services"
-    name       = "Other"
-    url        = "/other"
-    weight     = 4
-  
-  # Sub sub-menu
-  [[menu.main]]
-    parent = "marketing"
-    name   = "SEO"
-    url    = "/seo"
-    weight = 4
-
 [social]
   twitter = "zoliky"
 
