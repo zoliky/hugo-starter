@@ -20,7 +20,7 @@ pygmentsUseClasses     = true
 defaultContentLanguage = "en"
 
 # Disable the following languages
-# Takes a slice of strings, e.g. ["hu", "es", "de"]
+# Takes an array of strings, e.g. ["hu", "es", "de"]
 disableLanguages       = ["hu"]
 
 # ----------------------------------------------------------------------------
