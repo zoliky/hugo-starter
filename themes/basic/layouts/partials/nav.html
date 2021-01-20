@@ -10,10 +10,10 @@
 
   <div class="menu-container">
     <ul id="top-menu" class="menu">
-    {{ $currentPage := . }}
+    {{ $current := . }}
     {{ range .Site.Menus.main }}
+    {{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
     {{ $active := eq $.RelPermalink (.URL | relLangURL) }}
-    {{ $active = or $active (eq $.Section (lower .Name)) }}
     <li class="menu-item {{ if .HasChildren }}menu-item-has-children{{ end }}">
       <a href="{{ .URL | relLangURL }}"{{ if $active }} class="active"{{ end }}>
         {{ .Name }}
