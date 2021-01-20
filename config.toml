@@ -21,7 +21,7 @@ defaultContentLanguage = "en"
 
 # Disable the following languages
 # Takes an array of strings, e.g. ["hu", "es", "de"]
-disableLanguages       = ["hu"]
+disableLanguages       = []
 
 # ----------------------------------------------------------------------------
 # Default site params

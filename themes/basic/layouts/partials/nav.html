@@ -12,8 +12,10 @@
     <ul id="top-menu" class="menu">
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}
-    <li class="menu-item {{ if .HasChildren }}menu-item-has-children{{ end}}">
-      <a href="{{ .URL | absLangURL }}">
+    {{ $active := eq $.RelPermalink (.URL | relLangURL) }}
+    {{ $active = or $active (eq $.Section (lower .Name)) }}
+    <li class="menu-item {{ if .HasChildren }}menu-item-has-children{{ end }}">
+      <a href="{{ .URL | relLangURL }}"{{ if $active }} class="active"{{ end }}>
         {{ .Name }}
         {{ if .HasChildren }}
         <svg class="icon icon-angle-down" aria-hidden="true" role="img">

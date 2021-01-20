@@ -29,3 +29,12 @@ panelHeader.forEach(value => {
   });
 });
 #+end_src
+
+** A list
+
+- First item
+- Second item
+- Third item
+  - Third sub item
+  - Third sub item 2
+- Fourth item

@@ -170,6 +170,10 @@
     position: relative;
   }
 
+  .main-navigation > div > ul > li > a.active {
+    text-decoration: underline;
+  }
+
   .main-navigation > div > ul > li > a::after {
     content: "";
     display: block;
