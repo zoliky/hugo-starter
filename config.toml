@@ -43,7 +43,9 @@ disableLanguages       = []
   # --------------------------------------------------------------------------
   [languages.en]
     weight = 1
+    languageName = "English"
 
+    # Menu
     [[languages.en.menu.main]]
       name   = "Home"
       url    = "/"
@@ -51,18 +53,19 @@ disableLanguages       = []
     
     [[languages.en.menu.main]]
       name   = "About Us"
-      url    = "/about"
+      url    = "/about/"
+      identifier = "about"
       weight = 2
     
     [[languages.en.menu.main]]
       name   = "Blog"
-      url    = "/posts"
+      url    = "/posts/"
       weight = 3
 
     [[languages.en.menu.main]]
       identifier = "services"
       name       = "Services"
-      url        = "/services"
+      url        = "/services/"
       weight     = 4
     
     # Sub-menu
@@ -70,14 +73,14 @@ disableLanguages       = []
       identifier = "marketing"
       parent     = "services"
       name       = "Marketing"
-      url        = "/marketing"
+      url        = "/marketing/"
       weight     = 4
 
     # Sub sub-menu
     [[languages.en.menu.main]]
       parent = "marketing"
       name   = "SEO"
-      url    = "/seo"
+      url    = "/seo/"
       weight = 4
 
   # Hungarian
@@ -86,6 +89,7 @@ disableLanguages       = []
   [languages.hu]
     title        = "Új Hugo Weboldal"
     languageCode = "hu"
+    languageName = "Hungarian"
     weight       = 2
   
     # Override default site params
@@ -100,18 +104,19 @@ disableLanguages       = []
 
     [[languages.hu.menu.main]]
       name   = "Rólunk"
-      url    = "/about"
+      url    = "/about/"
+      identifier = "about"
       weight = 2
 
     [[languages.hu.menu.main]]
       name   = "Blog"
-      url    = "/posts"
+      url    = "/posts/"
       weight = 3
 
     [[languages.hu.menu.main]]
       identifier = "services"
       name       = "Szolgáltatások"
-      url        = "/services"
+      url        = "/services/"
       weight     = 4
     
     # Sub-menu
@@ -119,14 +124,14 @@ disableLanguages       = []
       identifier = "marketing"
       parent     = "services"
       name       = "Marketing"
-      url        = "/marketing"
+      url        = "/marketing/"
       weight     = 4
     
     # Sub sub-menu
     [[languages.hu.menu.main]]
       parent = "marketing"
       name   = "SEO"
-      url    = "/seo"
+      url    = "/seo/"
       weight = 4
 
 # ----------------------------------------------------------------------------
