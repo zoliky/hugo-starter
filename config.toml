@@ -16,7 +16,7 @@ paginate     = 2
 
 pygmentsUseClasses     = true
 
-# Fall back to English if there are no translations available
+# Fall back to English if no translations are available
 defaultContentLanguage = "en"
 
 # Disable the following languages
