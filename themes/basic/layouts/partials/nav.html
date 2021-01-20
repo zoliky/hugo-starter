@@ -13,9 +13,10 @@
     {{ $current := . }}
     {{ range .Site.Menus.main }}
     {{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
-    {{ $active := eq $.RelPermalink (.URL | relLangURL) }}
+    {{ $active }}
+
     <li class="menu-item {{ if .HasChildren }}menu-item-has-children{{ end }}">
-      <a href="{{ .URL | relLangURL }}"{{ if $active }} class="active"{{ end }}>
+      <a href="{{ .URL | relLangURL }}" class="{{ if $active }}active{{ end }}">
         {{ .Name }}
         {{ if .HasChildren }}
         <svg class="icon icon-angle-down" aria-hidden="true" role="img">
