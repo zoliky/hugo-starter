@@ -10,15 +10,6 @@
 
   <div class="menu-container">
     <ul id="top-menu" class="menu">
-    
-      {{/*
-    {{ $current := . }}
-    {{ range .Site.Menus.main }}
-      {{- $url := .URL | relLangURL -}}
-      {{- with .Page -}}
-        {{- $url = .RelPermalink -}}
-      {{- end -}} */}}
-
     {{ $current := . }}
     {{ range .Site.Menus.main }}
     {{ $active := eq $.RelPermalink (.URL | relLangURL) }}

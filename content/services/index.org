@@ -1,5 +1,6 @@
 ---
-title: "About us"
+title: "Services"
+type: services
 draft: false
 ---
 
