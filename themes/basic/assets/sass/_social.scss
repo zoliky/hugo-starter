@@ -13,19 +13,19 @@
   padding: 0;
   list-style: none;
   display: flex;
-}
 
-.social > li > a {
-  position: relative;
-  display: block;
-  width: 26px;
-  height: 26px;
-  background: #fff;
-  border-radius: .1875em;
-}
+  > li > a {
+    position: relative;
+    display: block;
+    width: 26px;
+    height: 26px;
+    background: #fff;
+    border-radius: .1875em;
+  }
 
-.social > li + li {
-  margin-left: .8em;
+  > li + li {
+    margin-left: .8em;
+  }
 }
 
 [class*=ico-] {

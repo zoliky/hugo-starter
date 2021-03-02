@@ -82,6 +82,14 @@ disableLanguages       = []
       name   = "SEO"
       url    = "/seo/"
       weight = 4
+    
+    # Sub-menu
+    [[languages.en.menu.main]]
+      identifier = "webdesign"
+      parent     = "services"
+      name       = "Web Design"
+      url        = "/webdesign/"
+      weight     = 5
 
   # Hungarian
   # --------------------------------------------------------------------------
