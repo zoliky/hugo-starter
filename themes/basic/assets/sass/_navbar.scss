@@ -1,4 +1,7 @@
-/* Menu Toggle */
+$toggle-btn-color: #fff;
+$main-nav-bg: #4A8C88;
+
+// Menu toggle button
 .menu-toggle {
   border: 0;
   padding: 1em;
@@ -8,40 +11,42 @@
   line-height: 1.5;
   margin: 1px auto 2px;
   background: transparent;
+  color: $toggle-btn-color;
 
   &:focus {
     outline: thin solid #ccc;
   }
 }
 
-/* Toggle SVGs */
-.icon {
-  display: inline-block;
-  fill: currentColor;
-  height: 1em;
-  width: 1em;
-  top: -0.0625em;
-  vertical-align: middle;
-  position: relative;
-}
-
 .main-navigation {
-  background: #4A8C88;
+  background: $main-nav-bg;
+  
+  .icon {
+    position: relative;
+    display: inline-block;
+    fill: currentColor;
+    height: 1em;
+    width: 1em;
+    top: -0.1225em;
+    vertical-align: middle;
+  }
 
   .icon-close {
     display: none;
   }
 
-  &.toggled-on .icon-hamburger {
-    display: none;
-  }
+  &.toggled-on {
+    .icon-hamburger {
+      display: none;
+    }
 
-  &.toggled-on .icon-close {
-    display: inline-block;
-  }
+    .icon-close {
+      display: inline-block;
+    }
 
-  &.toggled-on .menu {
-    display: block;
+    .menu {
+      display: block;
+    }
   }
 
   ul {
