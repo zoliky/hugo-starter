@@ -50,15 +50,14 @@ $main-nav-bg: #4A8C88;
   }
 
   ul {
+    margin: 0;
     display: none;
     background: #fff;
     list-style: none;
-    margin: 0;
     text-align: left;
 
     ul {
       padding: 0 0 0 1.5em;
-      display: none;
 
       &.toggled-on {
         display: block;
@@ -71,30 +70,30 @@ $main-nav-bg: #4A8C88;
   }
 
   li {
-    border-bottom: 1px solid #eee;
     position: relative;
+    border-bottom: 1px solid #eee;
 
     li {
       border: 0;
     }
-  }
 
-  li:last-child {
-    border: 0;
+    &:last-child {
+      border: 0;
+    }
   }
 
   a {
     display: block;
     padding: .8em 0;
     transition: color 0.2s;
-  }
 
-  a:hover {
-    color: #767676;
-  }
+    &:hover {
+      color: #767676;
+    }
 
-  a:focus {
-    outline: thin dotted;
+    &:focus {
+      outline: thin dotted;
+    }
   }
 }
 
