@@ -1,5 +1,3 @@
-@import "normalize";
-
 :root {
   font-size: 1em;
   line-height: 1.15;
@@ -64,10 +62,10 @@ i {
   background: #3b9ba7;
   transition: transform ease-in-out 250ms;
   box-shadow: -4px 3px 8px -3px rgba(0, 0, 0, .5);
-}
 
-.button:hover {
-  transform: scale(1.1);
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 figure img {
@@ -75,31 +73,31 @@ figure img {
   height: auto;
 }
 
+code {
+  font-family: monospace, monospace;
+  font-size: .9rem;
+}
+
 .src pre {
   overflow: auto;
   padding: .8em;
   border-radius: 0.3125em;
-}
 
-.src pre::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-  background-color: transparent;
-}
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+  }
 
-.src pre::-webkit-scrollbar-track {
-  border-radius: 10px;
-  background-color: transparent;
-}
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: transparent;
+  }
 
-.src pre::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color: #bbb;
-}
-  
-code {
-  font-family: monospace, monospace;
-  font-size: .9rem;
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #bbb;
+  }
 }
 
 @import "syntax.scss";
@@ -114,10 +112,9 @@ h2 {
 
 .container {
   margin: 0 auto;
-  max-width: 1200px;
-
   display: flex;
   flex-direction: column;
+  max-width: 1200px;
   min-height: 100vh;
 }
 
@@ -125,20 +122,20 @@ h2 {
   flex-grow: 1;
 }
 
-/* Header */
+// Header
 .site-title {
   font-weight: 400;
   font-size: 2.2em;
   font-family: 'Montserrat', sans-serif;
-}
 
-.site-title > a,
-.site-title > a:visited {
-  color: #111;
-}
+  a,
+  &:visited {
+    color: #111;
+  }
 
-.site-title > a:hover {
-  color: #4a4a4a;
+  a:hover {
+    color: #4a4a4a;
+  }
 }
 
 @import "navbar";
@@ -156,10 +153,6 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.footer > p {
-  margin: 0;
 }
 
 .pagination {
