@@ -134,15 +134,10 @@ $main-nav-bg: #4A8C88;
   .main-navigation {
     width: auto;
 
-    ul,
-    ul ul,
-    > div > ul {
-      display: block;
-    }
-
     ul {
-      background: transparent;
       padding: 0;
+      display: block;
+      background: transparent;
 
       ul {
         background: #4A8C88;
@@ -152,6 +147,12 @@ $main-nav-bg: #4A8C88;
         padding: 0;
         top: 100%;
         z-index: 99999;
+
+        ul {
+          left: -999em;
+          margin-top: -1px;
+          top: 0;
+        }
 
         .menu-item-has-children > a .icon {
           margin-top: -9px;
@@ -167,18 +168,11 @@ $main-nav-bg: #4A8C88;
           width: 16em;
         }
 
-        ul {
-          left: -999em;
-          margin-top: -1px;
-          top: 0;
-        }
-
         li:hover > ul,
         li:focus-within > ul {
           left: 100%;
           right: auto;
         }
-
       }
 
       li.menu-item-has-children:before {
