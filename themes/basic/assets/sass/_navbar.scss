@@ -135,12 +135,12 @@ $main-nav-bg: #4A8C88;
     width: auto;
 
     ul {
+      border: 0;
       padding: 0;
       display: block;
-      background: transparent;
+      background:#4A8C88;
 
       ul {
-        background: #4A8C88;
         position: absolute;
         border: 1px solid #bbb;
         left: -999em;
@@ -175,26 +175,11 @@ $main-nav-bg: #4A8C88;
         }
       }
 
-      li.menu-item-has-children:before {
-        border-color: transparent transparent #bbb;
-        bottom: 0;
-      }
-
-      li.menu-item-has-children:after {
-        border-color: transparent transparent #fff;
-      }
-
       li:hover > ul,
       li:focus-within > ul {
         left: 0.5em;
         right: auto;
       }
-    }
-
-    > div > ul {
-      border: 0;
-      padding: 0;
-      margin-bottom: 0;
     }
 
     li {
