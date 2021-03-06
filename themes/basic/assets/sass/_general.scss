@@ -20,6 +20,15 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+h2 {
+  font: {
+    size: 1.8rem;
+    weight: 400;
+    font-family: "Montserrat", sans-serif;
+  }
+  margin: 1em 0 1.4em;
+}
+
 p {
   font-size: 1rem;
   line-height: 1.8;
@@ -28,15 +37,6 @@ p {
 a {
   text-decoration: none;
   background-color: transparent;
-}
-
-h2 {
-  font: {
-    size: 1.8rem;
-    weight: 400;
-    font-family: "Montserrat", sans-serif;
-  }
-  margin: 1em 0 1.4em;
 }
 
 i {
