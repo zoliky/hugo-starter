@@ -15,14 +15,26 @@
 
 // Social icons
 @font-face {
-  font-family: 'ElegantIcons';
   src: url('../fonts/elegant/ElegantIcons.eot'),
-  url('../fonts/elegant/ElegantIcons.woff') format('woff'),
-  url('../fonts/elegant/ElegantIcons.ttf') format('truetype'),
-  url('../fonts/elegant/ElegantIcons.svg#ElegantIcons') format('svg');
-  font-weight: normal;
-  font-style: normal;
+       url('../fonts/elegant/ElegantIcons.woff') format('woff'),
+       url('../fonts/elegant/ElegantIcons.ttf') format('truetype'),
+       url('../fonts/elegant/ElegantIcons.svg#ElegantIcons') format('svg');
+  font: {
+    family: "ElegantIcons";
+    weight: normal;
+    style: normal;
+  }
 }
+
+// @font-face {
+//   font-family: 'ElegantIcons';
+//   src: url('../fonts/elegant/ElegantIcons.eot'),
+//        url('../fonts/elegant/ElegantIcons.woff') format('woff'),
+//        url('../fonts/elegant/ElegantIcons.ttf') format('truetype'),
+//        url('../fonts/elegant/ElegantIcons.svg#ElegantIcons') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
 
 .social {
   margin: 0;
