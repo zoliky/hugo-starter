@@ -1,49 +1,11 @@
-:root {
-  font-size: 1em;
-  line-height: 1.15;
-  scroll-behavior: smooth;
-  -webkit-text-size-adjust: 100%;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
+@import "general.scss";
+@import "404.scss";
+@import "navbar";
+@import "syntax.scss";
 
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Open Sans', sans-serif;
-}
-
-p {
-  line-height: 1.8;
-  font-size: 1rem;
-}
-
-a {
-  text-decoration: none;
-  background-color: transparent;
-}
-
-i {
-  font-style: normal;
-}
-
-.sr-only {
-  position: absolute;
-  padding: 0;
-  border: 0;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-}
+@import "orgmode.scss";
+@import "posts.scss";
+@import "social.scss";
 
 .button {
   display: inline-block;
@@ -100,9 +62,6 @@ code {
   }
 }
 
-@import "syntax.scss";
-@import "404.scss";
-
 h2 {
   margin: 1em 0 1.4em;
   font-weight: 400;
@@ -137,8 +96,6 @@ h2 {
     color: #4a4a4a;
   }
 }
-
-@import "navbar";
 
 .main {
   padding: 0 1em;
@@ -188,10 +145,6 @@ h2 {
 .pagination > .page-item.disabled > .page-link {
   color: #ddd;
 }
-
-@import "orgmode";
-@import "posts";
-@import "social";
 
 @media only screen and (min-width: 48em) {
   .pagination {
