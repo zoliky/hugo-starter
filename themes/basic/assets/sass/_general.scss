@@ -49,8 +49,8 @@ figure img {
 }
 
 .src pre {
-  overflow: auto;
   padding: .8em;
+  overflow: auto;
   border-radius: 0.3125em;
 
   &::-webkit-scrollbar {
@@ -70,13 +70,13 @@ figure img {
   }
 }
 
-.sr-only {
-  position: absolute;
-  padding: 0;
+.screen-readers {
   border: 0;
+  padding: 0;
   width: 1px;
   height: 1px;
   margin: -1px;
   overflow: hidden;
+  position: absolute;
   clip: rect(0, 0, 0, 0);
 }
