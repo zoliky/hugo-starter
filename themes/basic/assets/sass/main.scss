@@ -1,6 +1,9 @@
+@import "normalize.scss";
 @import "general.scss";
 @import "404.scss";
-@import "navbar";
+
+@import "header.scss";
+@import "navbar.scss";
 @import "syntax.scss";
 
 @import "orgmode.scss";
@@ -30,45 +33,6 @@
   }
 }
 
-figure img {
-  width: 100%;
-  height: auto;
-}
-
-code {
-  font-family: monospace, monospace;
-  font-size: .9rem;
-}
-
-.src pre {
-  overflow: auto;
-  padding: .8em;
-  border-radius: 0.3125em;
-
-  &::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-    background-color: transparent;
-  }
-
-  &::-webkit-scrollbar-track {
-    border-radius: 10px;
-    background-color: transparent;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background-color: #bbb;
-  }
-}
-
-h2 {
-  margin: 1em 0 1.4em;
-  font-weight: 400;
-  font-size: 1.8rem;
-  font-family: 'Montserrat', sans-serif;
-}
-
 .container {
   margin: 0 auto;
   display: flex;
@@ -79,22 +43,6 @@ h2 {
 
 .container-inner {
   flex-grow: 1;
-}
-
-// Header
-.site-title {
-  font-weight: 400;
-  font-size: 2.2em;
-  font-family: 'Montserrat', sans-serif;
-
-  a,
-  &:visited {
-    color: #111;
-  }
-
-  a:hover {
-    color: #4a4a4a;
-  }
 }
 
 .main {
@@ -110,40 +58,6 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.pagination {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  margin: 1em auto;
-  padding: 0;
-}
-
-.pagination > .page-item {
-  border: 1px solid #ddd;
-  flex: 1;
-  text-align: center;
-  width: 5em;
-}
-
-.pagination .page-link {
-  display: block;
-  color: #000;
-  text-decoration: none;
-  padding: 0.3em 0.8em;
-}
-
-.pagination > .page-item.active {
-  background-color: #333;
-}
-
-.pagination > .page-item.active > .page-link {
-  color: #fff;
-}
-
-.pagination > .page-item.disabled > .page-link {
-  color: #ddd;
 }
 
 @media only screen and (min-width: 48em) {
