@@ -50,22 +50,3 @@
   margin-top: 2.5em;
   margin-bottom: 2.2em;
 }
-
-.footer {
-  color: #fff;
-  padding: 0 1.1em;
-  background: #4A8C88;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-@media only screen and (min-width: 48em) {
-  .pagination {
-    width: 30%;
-  }
-
-  .footer {
-    flex-direction: row;
-  }
-}
