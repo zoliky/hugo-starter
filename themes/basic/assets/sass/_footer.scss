@@ -7,12 +7,6 @@
   align-items: center;
 }
 
-@media only screen and (min-width: 48em) {
-  .footer {
-    flex-direction: row;
-  }
-}
-
 // Social icons
 @font-face {
   src: url('../fonts/elegant/ElegantIcons.eot'),
