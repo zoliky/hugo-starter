@@ -193,3 +193,10 @@ disableLanguages       = []
     icon  = "ico-email"
     title = "Contact us via email"
     url   = "mailto:youremail@example.com"
+
+# ----------------------------------------------------------------------------
+# Security
+# ----------------------------------------------------------------------------
+[security]
+  [security.exec]
+    allow = ['^go$', '^npx$', '^postcss$', '^babel$']
