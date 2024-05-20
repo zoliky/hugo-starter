@@ -4,7 +4,7 @@
   <meta name="author" content="{{ .Site.Params.author }}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="{{ with .Page.Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-  {{ $script := resources.Get "js/main.js" | babel | minify | fingerprint -}}
+  {{ $script := resources.Get "js/main.js" | minify | fingerprint -}}
   <script src="{{ $script.Permalink }}" defer></script>
   <title>{{ if .Page.IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
 
