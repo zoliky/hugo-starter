@@ -1,5 +1,5 @@
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   {{ hugo.Generator }}
   <meta name="author" content="{{ .Site.Params.author }}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,7 +41,7 @@
 
   {{ with .OutputFormats.Get "rss" -}}
   {{ "<!-- RSS -->" | safeHTML }}
-  {{ $link := `<link rel="%s" type="%s" href="%s" title="%s" />` -}}
+  {{ $link := `<link rel="%s" type="%s" href="%s" title="%s">` -}}
   {{ printf $link .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML -}}
   {{ end }}
 
