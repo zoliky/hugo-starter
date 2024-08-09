@@ -29,6 +29,11 @@ p {
   line-height: 1.8;
 }
 
+p > code:not(.verbatim) {
+  background: #f0f0f0;
+  padding: .1em;
+}
+
 a {
   text-decoration: none;
   background-color: transparent;
