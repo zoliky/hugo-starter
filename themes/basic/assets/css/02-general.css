@@ -54,6 +54,20 @@ img {
   color: transparent;
 }
 
+blockquote {
+  margin: 1.5em 0;
+  padding: 0 1em;
+  border-left: 5px solid #d3d3d3;
+
+  & > :first-child {
+    margin-top: 0 !important;
+  }
+
+  & > :last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
 .src pre {
   padding: .8em;
   overflow: auto;
