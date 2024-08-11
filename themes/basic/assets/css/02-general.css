@@ -27,6 +27,11 @@ h2 {
 p {
   font-size: 1rem;
   line-height: 1.8;
+
+  & code:not(.verbatim) {
+    background: #f0f0f0;
+    padding: .1em;
+  }
 }
 
 a {
