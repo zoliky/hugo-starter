@@ -43,6 +43,12 @@ figure img {
   height: auto;
 }
 
+img {
+  /* Fixes a glitch in Firefox causing the alt text of the image
+  to be briefly displayed before the image loads. */
+  color: transparent;
+}
+
 .src pre {
   padding: .8em;
   overflow: auto;

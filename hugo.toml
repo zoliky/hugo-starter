@@ -34,6 +34,10 @@ disableLanguages       = []
   twittercard = true
   opengraph   = true
 
+[params.logo]
+  path        = "images/site-logo.jpg"
+  alt         = "" # Falls back to site title if empty
+
 # ----------------------------------------------------------------------------
 # Languages
 # ----------------------------------------------------------------------------

@@ -1,5 +1,16 @@
 <header>
+  {{ with site.Params.logo.path }}
+  <h1 class="site-title screen-readers"><a href="{{ site.Home.Permalink }}">{{ site.Title }}</a></h1>
+  <a href="{{ site.Home.Permalink }}">
+    {{ with resources.Get . }}
+    <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ site.Params.logo.alt | default site.Title }}">
+    {{ else }}
+      {{ errorf "Unable to find %s in assets directory" . }}
+    {{ end }}
+  </a>
+  {{ else }}
   <h1 class="site-title">
-    <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+    <a href="{{ site.Home.Permalink }}">{{ site.Title }}</a>
   </h1>
+  {{ end }}
 </header>
