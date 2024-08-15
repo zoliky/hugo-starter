@@ -1,9 +1,10 @@
-.blog {
-  // padding-bottom: 1em;
-}
-
 .blog-post {
   margin: 3em 0 3.5em;
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .post-summary {
