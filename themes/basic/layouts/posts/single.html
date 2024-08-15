@@ -5,6 +5,13 @@
       <header>
         <h2>{{ .Title }}</h2>
       </header>
+      {{ with or (.Resources.GetMatch "featured.*") (.Resources.Get .Params.featuredimage) }}
+      <section class="featured-image">
+        <a href="{{ .RelPermalink }}">
+          <img src="{{ .RelPermalink }}" loading="lazy" width="{{ .Width }}" height="{{ .Height }}" alt="featuredimage">
+        </a>
+      </section>
+      {{ end }}
       <section class="post-content">
         {{ .Content }}
       </section>
