@@ -10,13 +10,12 @@
 
   <div class="menu-container">
     <ul id="top-menu" class="menu">
-    {{ $current := . }}
     {{ range .Site.Menus.main }}
     {{ $active := eq $.RelPermalink (.URL | relLangURL) }}
     {{ $active = or $active (eq $.Section (lower .Name)) }}
 
     <li class="menu-item {{ if .HasChildren }}menu-item-has-children{{ end }}">
-      <a href="{{ .URL | absLangURL }}" class="{{ if $active }}active{{ end }}">
+      <a href="{{ .URL | absLangURL }}" {{ if $active }}class="active"{{ end }}>
         {{ .Name }}
         {{ if .HasChildren }}
         <svg class="icon icon-angle-down" aria-hidden="true" role="img">
@@ -32,8 +31,10 @@
       </button>
       <ul class="sub-menu">
         {{ range .Children }}
+        {{ $active := eq $.RelPermalink (.URL | relLangURL) }}
+        {{ $active = or $active (eq $.Section (lower .Name)) }}
         <li class="menu-item {{ if .HasChildren }}menu-item-has-children{{ end}}">
-          <a href="{{ .URL | absLangURL }}">
+          <a href="{{ .URL | absLangURL }}" {{ if $active }}class="active"{{ end }}>
             {{ .Name }}
             {{ if .HasChildren }}
             <svg class="icon icon-angle-down">
@@ -49,8 +50,10 @@
           </button>
           <ul class="sub-menu">
             {{ range .Children }}
+            {{ $active := eq $.RelPermalink (.URL | relLangURL) }}
+            {{ $active = or $active (eq $.Section (lower .Name)) }}
             <li class="menu-item">
-              <a href="{{ .URL | absLangURL }}">
+              <a href="{{ .URL | absLangURL }}" {{ if $active }}class="active"{{ end }}>
                 {{ .Name }}
                 {{ if .HasChildren }}
                 <svg class="icon icon-angle-down">
