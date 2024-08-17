@@ -91,10 +91,11 @@ blockquote {
   }
 }
 
-.src pre {
+.highlight pre {
   padding: .8em;
   overflow: auto;
   border-radius: 0.3125em;
+  background-color: #f0f0f0 !important;
 
   &::-webkit-scrollbar {
     width: 10px;
@@ -125,6 +126,10 @@ table {
     
   & tr {
     border-bottom: 1px solid #eee;
+  }
+
+  &.lntable pre {
+    padding: 0;
   }
 }
 
