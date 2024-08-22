@@ -42,8 +42,8 @@
   <link rel="stylesheet" href="{{ $css.RelPermalink }}">
 
   {{ "<!-- Locales -->" | safeHTML }}
-  <link rel="alternate" href="{{ .Site.BaseURL }}hu" hreflang="hu">
-  <link rel="alternate" href="{{ .Site.BaseURL }}" hreflang="x-default">
+  <link rel="alternate" href="{{ site.Home.Permalink }}hu" hreflang="hu">
+  <link rel="alternate" href="{{ site.Home.Permalink }}" hreflang="x-default">
 
   {{ with .OutputFormats.Get "rss" -}}
   {{ "<!-- RSS -->" | safeHTML }}
