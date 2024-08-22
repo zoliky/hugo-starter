@@ -11,7 +11,7 @@
   {{ $js = $js | fingerprint }}
   <script src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
   {{ end }}
-  <title>{{ if .Page.IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+  <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s - %s" .Title site.Title }}{{ end }}</title>
 
   {{ if .Site.Params.twittercard -}}
   {{ "<!-- Twitter card -->" | safeHTML }}
