@@ -14,13 +14,13 @@
   <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s - %s" .Title site.Title }}{{ end }}</title>
 
   {{ if site.Params.twittercard -}}
-  {{ "<!-- Twitter card -->" | safeHTML }}
-  {{ template "_internal/twitter_cards.html" . }}
+    {{ "<!-- Twitter card -->" | safeHTML }}
+    {{ template "_internal/twitter_cards.html" . }}
   {{ end -}}
   
   {{ if site.Params.opengraph -}}
-  {{ "<!-- OpenGraph -->" | safeHTML }}
-  {{ template "_internal/opengraph.html" . }}
+    {{ "<!-- Facebook OpenGraph -->" | safeHTML }}
+    {{ template "_internal/opengraph.html" . }}
   {{ end -}}
 
   {{ "<!-- Favicon -->" | safeHTML }}
@@ -46,8 +46,8 @@
   <link rel="alternate" href="{{ site.Home.Permalink }}" hreflang="x-default">
 
   {{ with .OutputFormats.Get "rss" -}}
-  {{ "<!-- RSS -->" | safeHTML }}
-  {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML -}}
+    {{ "<!-- RSS -->" | safeHTML }}
+    {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML -}}
   {{ end }}
 
   {{ "<!-- Toolbar color on Android devices -->" | safeHTML }}
