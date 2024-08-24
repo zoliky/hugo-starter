@@ -25,9 +25,7 @@
   <link rel="manifest" href="{{ "manifest.json" | relURL }}">
 
   {{ "<!-- Styles -->" | safeHTML }}
-  {{- $css := resources.Match "css/*.css" }}
-  {{- $css = $css | resources.Concat "styles.css" | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+  {{ partial "head/css.html" . }}
 
   {{ "<!-- Locales -->" | safeHTML }}
   <link rel="alternate" href="{{ site.Home.Permalink }}hu" hreflang="hu">
