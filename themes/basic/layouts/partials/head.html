@@ -4,13 +4,7 @@
   <meta name="author" content="{{ .Site.Params.author }}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
-  {{ $js := resources.Get "js/main.js" | js.Build (dict "minify" (not hugo.IsDevelopment)) -}}
-  {{ if hugo.IsDevelopment }}
-  <script src="{{ $js.Permalink }}" defer></script>
-  {{ else }}
-  {{ $js = $js | fingerprint }}
-  <script src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
-  {{ end }}
+  {{ partial "head/js.html" . }}
   <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s - %s" .Title site.Title }}{{ end }}</title>
 
   {{ if site.Params.twittercard -}}
